@@ -27,3 +27,7 @@ int main()
 
     return 0;
 }
+
+data_typeof_fun fun_name(parameter)
+{
+}
