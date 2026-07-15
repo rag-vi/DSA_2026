@@ -17,14 +17,21 @@ int main()
     Node *newNodeEnd = new Node();
     newNodeEnd->data = 30;
     newNodeEnd->next = NULL;
-    second->next = newNodeEnd;
 
     Node *temp = head;
 
+    while (temp->next != NULL)
+    {
+
+        temp = temp->next;
+    }
+    temp->next = newNodeEnd;
+    temp = head;
     while (temp != NULL)
     {
         cout << temp->data << " ";
         temp = temp->next;
     }
+
     return 0;
 }
